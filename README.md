@@ -6,6 +6,7 @@ Este repositorio documenta una práctica técnica enfocada en el análisis bási
 
 ## Contenido del repositorio
 
+```perl
 logs-linux/
 ├── README.md
 ├── informe-tecnico.md
@@ -22,7 +23,7 @@ logs-linux/
 │ ├── enviar-log-netcat.sh
 │ ├── escuchar-netcat.sh
 └── .gitignore
-
+```
 
 ---
 
@@ -34,7 +35,7 @@ logs-linux/
 - Comprender los campos clave de un evento de log.
 - Comprimir un log (`gzip`) y transferirlo mediante:
   - SCP (Secure Copy)
-  - Netcat (nc)
+  - Netcat (`nc`)
 - Reflexionar sobre la utilidad de la transferencia de logs y su rol en la ciberseguridad.
 
 ---

@@ -1,14 +1,4 @@
-
----
-
-## 📘 Informe técnico en formato Markdown
-
-```markdown
 # INFORME TÉCNICO – Análisis y Envío de Logs en Linux
-
-**Nombre y Apellidos**: Deborah Loisel Santana  
-**Fecha**: 14/03/2025  
-```
 
 ---
 
@@ -91,11 +81,13 @@ Despues de editar su configuración, se reinicia con:
 ### 4.a. Transferencia mediante SCP
 
 * Se comprimió el archivo de logs:
+  
   ```bash
   sudo gzip -c /var/log/syslog > syslog.gz
   ```
 
 * Luego, se transfirió al equipo remoto:
+  
     ```bash
     scp syslog.gz usuario@10.0.2.5:/home/usuario/
     ```
@@ -134,3 +126,8 @@ El archivo se recibió correctamente en el directorio donde se ejecutó el coman
 - Usar protocolos cifrados (SCP o SSH)
 - Restringir el acceso solo a usuarios autorizados
 - Verificar la integridad del archivo recibido
+
+---
+
+**Nombre y Apellidos**: Deborah Loisel Santana  
+**Fecha**: 14/03/2025  

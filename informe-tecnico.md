@@ -10,6 +10,8 @@ Se analizó el archivo de logs de arranque usando el comando:
 tail -f /var/log/boot.log
 ```
 
+![Arranque](./capturas/arranque.PNG)
+
 Este archivo registra el proceso de inicio del sistema, incluyendo:
 
   * Activación de servicios
@@ -21,6 +23,8 @@ Ejemplo de evento detectado:
   ```css
   [  OK  ] Started Network Manager.
   ```
+
+![Evento](./capturas/evento.PNG)
 
 Esto indica que el servicio se inició correctamente.
 
@@ -42,11 +46,15 @@ Comprobación:
   ls /var/log
   ```
 
+![Comprobación](./capturas/comprobacion.PNG)
+
 **Visualización de logs en tiempo real:**
 
   ```bash
   sudo journalctl -f
   ```
+
+![Journalctl](./capturas/journalctl.PNG)
 
 **Activación del servicio `rsyslog` :**
   ```bash
@@ -61,11 +69,14 @@ Despues de editar su configuración, se reinicia con:
   sudo systemctl restart rsyslog
   ```
 
+![Syslog](./capturas/syslog.PNG)
+
 ---
 
 ## 3. Análisis de eventos registrados.
 ```
 **Ejemplo de evento extraído**
+![Evento Registrado](./capturas/evento_registrado.PNG)
 ***Tipo de evento**: Acción normal.
 ***Usuario origen**: system[1]
 ***Hora del evento**: 12:09
@@ -100,13 +111,19 @@ Despues de editar su configuración, se reinicia con:
   nc -l -p 12345 > syslog.gz
   ```
 
+![Receptor](./capturas/receptor.PNG)
+
 * En el equipo emisor (Kali Linux, IP 10.0.2.7):
 
   ```bash
   sudo cat syslog.gz | nc 10.0.2.5 12345
   ```
 
+![Emisor](./capturas/emisor.PNG)
+
 El archivo se recibió correctamente en el directorio donde se ejecutó el comando `nc`.
+
+![Recepción](./capturas/recepcion.PNG)
 
 ---
 

@@ -2,6 +2,8 @@
 
 Este repositorio documenta una práctica técnica enfocada en el análisis básico de registros (logs) en sistemas Linux. Se exploran distintas formas de visualizar eventos del sistema, comprimir archivos de log, transferirlos entre máquinas de forma segura y reflexionar sobre su utilidad en contextos de seguridad informática y administración de sistemas.
 
+![Recepción](./capturas/recepcion.PNG)
+
 ---
 
 ## Contenido del repositorio
